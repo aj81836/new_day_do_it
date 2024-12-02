@@ -18,7 +18,7 @@ bool checkPalindrome(int n)
 
 int main()
 {
-    int n = 123721;
+    int n = 121;
 
     if (checkPalindrome(n) == 1) {
         cout << "Yes\n";

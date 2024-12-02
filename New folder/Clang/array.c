@@ -1,36 +1,22 @@
-// C program to implement linear
-// search in unsorted array
 #include <stdio.h>
 
-// Function to implement search operation
-int findElement(int arr[], int n, int key)
-{
-    int i;
-    for (i = 0; i < n; i++)
-        if (arr[i] == key)
-            return i;
-    
-      // If the key is not found
-    return -1;
-}
+int main() {
+    // Declare an integer array of 6 elements
+    int intArray[6];
+    int length = 0;  // You want to add 5 elements to the array
 
-// Driver's Code
-int main()
-{
-    int arr[] = { 12, 34, 10, 6, 40 };
-    int n = sizeof(arr) / sizeof(arr[0]);
+    // Add elements to the array
+    for (int i = 0; i < 5; i++) {
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &intArray[i]);  // Corrected: use &intArray[i] to input each element
+    }
 
-    // Using a last element as search element
-    int key = 40;
-  
-      // Function call
-    int position = findElement(arr, n, key);
-
-    if (position == -1)
-        printf("Element not found");
-    else
-        printf("Element Found at Position: %d",
-               position + 1);
+    // Print the elements of the array
+    printf("Array elements:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", intArray[i]);
+    }
+    printf("\n");
 
     return 0;
 }
