@@ -21,8 +21,8 @@ int main(){
     struct node *fourth;
 
     head=(struct node*)malloc(sizeof(struct node));
-    second=(struct node*)malloc(sizeof(struct node*));
-    third=(struct node*)malloc(sizeof(struct node*));
+    second=(struct node*)malloc(sizeof(struct node));
+    third=(struct node*)malloc(sizeof(struct node));
     fourth=(struct node*)malloc(sizeof(struct node));
 
     head->data=11;
